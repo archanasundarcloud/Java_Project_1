@@ -17,8 +17,6 @@ variables:
   # Environment name
   environmentName: 'Archanawebapp1'
 
-  # Agent VM image name
-  vmImageName: 'ARCHU'
 
 stages:
 - stage: Build
@@ -56,7 +54,9 @@ stages:
     displayName: Deploy Linux Web App
     environment: $(environmentName)
     pool:
-      vmImage: $(vmImageName)
+      name: Java-agp
+      demands:
+      - agent.name -equals ARCHU
     strategy:
       runOnce:
         deploy:
