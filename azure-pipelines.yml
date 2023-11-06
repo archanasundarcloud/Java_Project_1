@@ -27,7 +27,9 @@ stages:
   - job: MavenPackageAndPublishArtifacts
     displayName: Maven Package and Publish Artifacts
     pool:
-      vmImage: $(vmImageName)
+      name: Java-agp
+      demands:
+      - agent.name -equals ARCHU
 
     steps:
     - task: Maven@3
