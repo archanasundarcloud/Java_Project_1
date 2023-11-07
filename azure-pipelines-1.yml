@@ -17,10 +17,10 @@ variables:
   azureSubscription: '5ecf7b65-ff9b-4321-91a5-c12ee42eb844'
 
   # Web app name
-  webAppName: ''
+  webAppName: 'Archanawebapp'
 
   # Environment name
-  environmentName: ''
+  environmentName: 'Archanawebapp'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
