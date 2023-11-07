@@ -9,7 +9,7 @@ trigger:
 pool:
   name: Java-agp
   demands:
-  -agent.name -equals agent
+  - agent.name -equals agent
 
 variables:
 
